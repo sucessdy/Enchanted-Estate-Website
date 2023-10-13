@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bodoni+Moda:wght@400;500&family=Bruno+Ace+SC&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500&family=Diphylleia&family=Fredoka:wght@400;500&family=Lora:wght@400;500&family=Manrope:wght@300;400&family=Moirai+One&family=Monoton&family=Montserrat:wght@400;500;600&family=Outfit:wght@400;500;600&family=Quicksand:wght@400;500&family=Raleway:wght@400;500&family=Righteous&family=Roboto:wght@400;500&family=Rubik+Pixels&family=Sedgwick+Ave+Display&family=Ysabeau+SC:wght@300;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #191416, #1d1d1c);
+
+ 
+}
+
+.Service {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 1rem 2rem;
+}
+
+.card p {
+  padding-top: 1rem;
+  line-height: 100%;
+}
+
+.expand {
+  width: 23rem;
+}
+
+button.menu-button {
+  position: absolute;
+  z-index: 100;
+}
+
+.menu-container {
+  position: relative;
+}
+
+button.menu-button {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.item {
+  min-height: 20em;
+  width: 20rem;
+  padding: 20px;
+  pointer-events: none
+  ; background: chocolate;
+}
+
+.item img {
+  width: 100%;
+
+  height: 100%;
+  border-radius:  10px ;
+  background: white;
+ 
+}
+
+.inner-carousel {
+  display: flex;
+  background: blanchedalmond;
+  background: #000;
+  
+}
+
+.carousel {
+
+overflow: hidden;
+   cursor: grab;
+   background: white;
+}
+
+#background { width: 100%; 
+height: 100%;
+ background: linear-gradient(#1d1d1c, #545453);
+ position: absolute;
+ 
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
