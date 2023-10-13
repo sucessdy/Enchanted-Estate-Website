@@ -1,16 +1,13 @@
 {
-  "homepage": "https://sucessdy.github.io/",
+  "homepage": "https://sucessdy.github.io/Real_Estate_Web",
   "name": "your-project-name",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-   
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    
-
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
