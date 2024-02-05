@@ -65,7 +65,7 @@ export default function Header({}) {
           luxurious and expensive houses in the world.
         </motion.p>
 
-        <a href="./discover">
+        <a href="/discover">
           {" "}
           <button className=" text-center text-white hover:text-black text-xs border bg-[#1d1d1c] hover:bg-[#ffffff] p-2  h-12 w-1/2  uppercase font-semibold ">
             {" "}

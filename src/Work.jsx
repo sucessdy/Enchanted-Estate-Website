@@ -52,7 +52,7 @@ export default function Work() {
           teanform your interior design.. Each page showccase the luxurious that
           our picese art create. Our Design, endless possibities.
         </p>
-        <a href="/#contact" className="mt-5 ">
+        <a href="/contact" className="mt-5 ">
         <button className=" text-center text-white text-sm font-medium 
         sm:text-xs border bg-[#1d1d1c] hover:animate-pulse hover:bg-[#000000] p-2  h-12 w-1/2 ml-4  py-33 px-6    uppercase   ">
           {" "}

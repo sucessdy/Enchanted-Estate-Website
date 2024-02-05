@@ -11,14 +11,14 @@ export default [
   },
 
   {
-    name: " High-Quality Property Images",
+    name: " High-Quality Property Images:",
     description:
       " Display high-resolution images of each property to showcase its best features.",
     icon: <MdOutlineCameraOutdoor/>,
   }, 
 
   {
-    name: " Virtual Tours::",
+    name: " Virtual Tours:",
     description:
       " Offer virtual tours of select properties to allow users to explore the house remotely.",
 
@@ -26,7 +26,7 @@ export default [
   },
 
   {
-    name: " Property Reviews and Ratings",
+    name: " Property Reviews And Ratings:",
     description:
       " Allow previous buyers/renters to leave reviews and ratings for properties they've interacted with",
     icon: <AiFillStar />,

@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 import Header from "./Header";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-// import { AiOutlineMenu, AiOutlineCloseCircle } ~from "react-icons/ai";
 import { FaTimesCircle } from "react-icons/fa";
-import { FaHamburger } from "react-icons/fa";
+import {HiOutlineMenuAlt4 } from "react-icons/hi";
 const Links = [
-  { name: "Home", link: "#home" },
-  { name: "Contact", link: "./contact" },
+  { name: "Home", link: "/" },
+  { name: "About Us", link: "./about-us" },
 
-  { name: "Style", link: "./style" },
-  { name: "Service", link: "./work" },
+
+  { name: "Service", link: "./style" },
+  { name: "Testimonial", link: "./testimonial" },
 ]
 
 const Home = () => {
@@ -31,10 +31,11 @@ const Home = () => {
             transition={{ duration: 0.5 }}
           >
             {" "}
-            <h2 className="flex justify-start items-center gap-4 p-3 font-Outfit font-semibold ">
+            <motion.h2   initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}  className="flex justify-start items-center gap-4 p-3 font-Outfit font-semibold ">
               {" "}
               Enchanted
-            </h2>
+            </motion.h2>
           </motion.div>
 
           <div className="md:block hidden md:items-center list-none overflow-hidden z-40  gap-3">
@@ -60,7 +61,7 @@ const Home = () => {
                     window.scrollTo(0, 0);
                   }}
                   className={`${
-                    open === link.name ? "text-white" : "hover:text-stone-400"
+                    open === link.name ? "text-gray-100 " : "hover:text-stone-400"
                   } text-[16px] cursor-pointer font-Raleway text-sm space-x-3 font-medium  `}
                   
                 >
@@ -68,27 +69,30 @@ const Home = () => {
                   {link.name}
                 </Link>
               ))}
-              ;
+              
             </motion.div>
           </div>
 
           {/* mobile  */}
           <div
-            className="sm:hidden flex flex-1 justify-end items-center pl-12 
+            className="sm:hidden flex flex-1 justify-end items-center pl-12
           "
           >
-            <button
+            <motion.button
               type="button"
               // id="menu-btn"
               onClick={handleToggle}
-              className=" h-7 cursor-pointer"
+              className=" h-7 cursor-pointer "  
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ type: "tween", duration: 0.3 }}
             >
-              {toggle ? <FaTimesCircle /> : <FaHamburger />}
-            </button>
+              {toggle ? <FaTimesCircle /> : <HiOutlineMenuAlt4 />}
+            </motion.button>
             <div
               className={`${
                 !toggle ? "hidden" : ""
-              } p-6 bg-gradient-to-l from-stone-800 to-stone-400 opacity-80 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+              } p-6 bg-gradient-to-l from-stone-800 to-stone-400 opacity-80 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl  `}
             >
               <ul className="list-none flex justify-end items-start flex-col gap-12">
                 {Links.map((link) => (
@@ -116,11 +120,14 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <a href="./all">
-            <button className="flex justify-end items-end px-4 py-2 bg-black text-white hover:text-black rounded-md hover:bg-white max-md:invisible">
-              {" "}
-              Exlpore
-            </button>
+          <a href="./contact">
+            <motion.button      initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ type: "tween", duration: 0.3 }}
+           className="flex justify-end items-end px-4 py-2 bg-black text-white hover:text-black rounded-md hover:bg-white max-md:invisible">
+              {" "}  
+            Contact Us
+            </motion.button>
           </a>
         </nav>
 

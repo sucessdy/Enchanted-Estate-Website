@@ -55,19 +55,19 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-400  text-sm  ">
               <li className="mb-1 flex justify-around items-center sm:justify-start ">
-                <a href="./home" className="hover:text-white " > Home</a>
+                <a href="/" className="hover:text-white " > Home</a>
               </li>
               <li className="mb-1 flex justify-around items-center sm:justify-start ">
-                <a href="./style" className="hover:text-white">
+                <a href="./testimonial" className="hover:text-white">
                   {" "}
-                  House Style
+                 Testiomonial
                 </a>
               </li>
               <li className="mb-1 flex justify-around items-center sm:justify-start  ">
-                <a href="#contact" className="hover:text-white " > Contact</a>
+                <a href="./contact" className="hover:text-white " > Contact</a>
               </li>
               <li className="mb-1 flex justify-around items-center sm:justify-start ">
-                <a href="./service" className="hover:text-white " > Service</a>
+                <a href="./style" className="hover:text-white " > Service</a>
               </li>
             </ul>
           </div>

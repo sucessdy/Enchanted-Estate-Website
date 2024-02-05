@@ -40,7 +40,7 @@ function Items({ index }) {
       >
         <div
        
-          className=" bg-white w-full h-full top-0 bottom-0 "
+          className=" bg-white w-full h-full top-0 bottom-0 right-0 left-0 "
         >
           <h1
             className=" text-3xl font-BodoniModa text-[#1d1d1c] m-5 uppercase mx-auto py-4 p-7  items-center flex justify-center leading-7 space-x-3 mt-4 pt-9 tracking-wide font-medium
@@ -62,7 +62,7 @@ initial="hidden"
 whileInView="show"
 viewport={{ once: true, amount: 0.25 }} 
 
-            className=" mx-auto relative z-0  grid sm:grid-cols-2 md:grid-cols-3 gap-4  bottom-3  max-sm:justify-center sm:items-center sm:text-center md:flex-row md:flex sm:flex   md:justify-center space-x-4  "
+            className=" mx-auto relative z-0  grid sm:grid-cols-2 md:grid-cols-3 gap-4  bottom-3  max-sm:justify-center sm:items-center sm:text-center md:flex-row md:flex sm:flex   md:justify-center space-x-4"
           >
             {contacts.map((contact, index) => (
             

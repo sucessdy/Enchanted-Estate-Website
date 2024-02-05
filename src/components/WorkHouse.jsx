@@ -56,7 +56,7 @@ export default function WorkHouse({ title,
       {/* button amount */}
 
       <div className="flex justify-between items-center my-5  ">
-        <a href="./contact">
+        <a href="tel:+91-7982516281">
         <button className="mx-2  items-center  text-center text-white md:text-md  sm:text-sm text-sm  md:text-[12px] lg:text-[14x]   border bg-[#1d1d1c] hover:bg-[#8d8c85]  py-1 px-4  h-8 sm-h-10 w-3/3 uppercase">
           {}Book Now
         </button>

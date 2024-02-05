@@ -11,13 +11,13 @@ function HorizontalTitle({ title, button, image }) {
         src={image}
         alt="aimg"
       />
-      <div className="text-xl uppercase mx-auto my-4 text-gray-100 ">
+      <div className="text-xl font-raleway uppercase mx-auto my-4 text-gray-100 ">
         {" "}
         {title}
       </div>
       <a
         id="text"
-        className="text-sm text-gray-300 first-letter:capitalize "
+        className="text-sm text-gray-300  first-letter:capitalize "
       >
         {button}
       </a>

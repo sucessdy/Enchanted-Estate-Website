@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import sectionWrapper from "./hoc/sectionWrapper";
+import Footer from "./Footer";
 
 const imgUrl = {
   modern:
@@ -14,29 +15,34 @@ const imgUrl = {
 
 const typeVariants = ["modern", "simple", "bungalow", "luxury"];
 
-// const imgSrc = [selectedRoom(room) + selectedType(house)]
 function ProductPage() {
   const [selectedType, setselectedType] = useState("modern");
 
   return (
-    <main id='style' className="style w-[100%] h-[100%] flex flex-col lg:flex-row bg-white p-2z  ">
-      <div id="style" className="relative lg:w-1/2 w-full h-[99%]  sm:items-center sm:flex sm:justify-center drop-shadow-sm ">
+    <> 
+    <main
+      id="style"
+      className="style w-[100%] h-[100%] flex flex-col lg:flex-row bg-white p-2z  "
+    >
+      <div
+        id="style"
+        className="relative lg:w-1/2 w-full h-[99%]  sm:items-center sm:flex sm:justify-start justify-center drop-shadow-sm "
+      >
         <img
           src={imgUrl[selectedType]}
-          className="w-[100%] min-h-[70%]  sm:w-[80%] sm:h-[80%] rounded-md object-cover  drop-shadow-lg items-center flex  justify-center 
+          className="w-[100%] sm:w-[80%] sm:h-[80%] rounded-md object-cover  drop-shadow-lg items-center flex  justify-center 
  "
           alt="house "
         />
       </div>
-      {/* all the right side  */}
 
       <div className="w-full lg:w-1/2 flex  justify-start  p-5 items-baseline  sm:items-center sm:justify-center sm:flex  flex-col  lg:flex lg:justify-start lg:items-start">
-        <h2 className="text-[#1d1d1c] font-BodoniModa  p-[2%] pt-12  text-[2.3rem]   flex-col capitalize text-regular ">
+        <h2 className="text-[#1d1d1c] font-BodoniModa  p-[2%] pt-12  text-[2.3rem]   flex-col capitalize text-regular  sm:text-start text-center">
           {" "}
           Exclusive Modern House{" "}
         </h2>
 
-        <p className=" text-[#1d1d1c] text-[1.3rem] font-bold  p-2 first-letter:left-0 flex  items-start  border-purple-50  justify-start    ">
+        <p className=" text-[#1d1d1c] text-[1.3rem] font-bold  p-2 first-letter:left-0 flex  sm:items-start  border-purple-50  justify-start    ">
           {" "}
           $400,900 USD{" "}
         </p>
@@ -72,6 +78,8 @@ function ProductPage() {
         </a>
       </div>
     </main>
+<Footer/>
+    </>
   );
 }
 export default sectionWrapper(ProductPage, "");

@@ -32,7 +32,7 @@ const variants = {
 
 const DiscoverMoreCard = ({ house }) => (
   <VerticalTimelineElement
-    className="discover"
+    className=""
     contentStyle={{ background: "white", color: "#1d1d1c" }}
     contentArrowStyle={{ borderRight: "5px solid #1d1d1c" }}
     count={house.count}
@@ -68,12 +68,12 @@ const DiscoverMoreCard = ({ house }) => (
 
 const DiscoverMore = () => {
   return (
-    <motion.div id="discover" className="discover" variants={textVariant()}>
+    <motion.div className="discover" variants={textVariant()}>
       <motion.div
         variants={variants}
         initial="initial"
         animate="animate"
-        className="w-full px-8 mt-9 h-full "
+        className="w-full px-8 mt-9 h-full"
       >
         <p className="text-sm font-raleway uppercase text-white  font-medium">
           {" "}
