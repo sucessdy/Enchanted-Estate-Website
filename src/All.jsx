@@ -29,7 +29,7 @@ function All() {
 <p className="font-raleway my-3 p-1"> 
 At Enchanted, we stand at the forefront of modern architecture, pushing boundaries to redefine what's possible. Our team is a collective of visionaries, passionate about transforming spaces into living, breathing works of art. 
 </p>
-        <a href="./contact" className=" mx-5  font-cinzel first-letter:font-bold text-amber-900 first-letter:text-orange-800  font-semibold ">
+        <a href="contact" className=" mx-5  font-cinzel first-letter:font-bold text-amber-900 first-letter:text-orange-800  font-semibold ">
           Discover More+{" "}
         </a>
       </div>

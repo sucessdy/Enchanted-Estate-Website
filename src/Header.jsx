@@ -65,7 +65,7 @@ export default function Header({}) {
           luxurious and expensive houses in the world.
         </motion.p>
 
-        <a href="/discover">
+        <a href="./discover">
           {" "}
           <button className=" text-center text-white hover:text-black text-xs border bg-[#1d1d1c] hover:bg-[#ffffff] p-2  h-12 w-1/2  uppercase font-semibold ">
             {" "}
@@ -79,7 +79,7 @@ export default function Header({}) {
       <motion.div    variants={variants}
         initial="initial"
         animate="animate" className="absolute xs:bottom-10 bottom-10 p-5 w-full flex justify-end items-end z-50  mb-3">
-        <a href="#items">
+        <a href="items">
           <div className=" w-[32px] h-[62px] rounded-3xl border-4 border-secondary flex justify-center  items-start p-2 ">
             <motion.div
               animate={{ y: [0, 24, 0] }}
