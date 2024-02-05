@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import sectionWrapper from "./hoc/sectionWrapper";
 import Footer from "./Footer";
+import Home from "./Home";
 
 const imgUrl = {
   modern:
@@ -20,6 +21,7 @@ function ProductPage() {
 
   return (
     <> 
+    <Home /> 
     <main
       id="style"
       className="style w-[100%] h-[100%] flex flex-col lg:flex-row bg-white p-2z  "

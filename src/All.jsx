@@ -2,13 +2,13 @@ import React from "react";
 
 import SlideShow from "./SlideShow";
 import Footer from "./Footer";
-import HomePage from "./pages/HomePage";
+import Home from "./Home";
 
 function All() {
   return (
 
     < > 
-    <HomePage/>
+    <Home/>
   
     <div id="about-us"  className="about-us grid md:grid-cols-2 overflow-hidden  bg-white mb-0  p-3 ">
       { /* div 1 */}

@@ -4,7 +4,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import HorizontalTitle from "./pages/HorizontalTitle";
 
 import HorizontalHeading from "./components/HorizontalHeading";
-
+import Home from "./Home";
 const SlideLeft = () => {
   var slider = document.getElementById('slider');
   slider.scrollLeft -= 500; 
@@ -16,6 +16,7 @@ const  SlideRight = () => {
 }
 export default function Horizontal() {
   return ( <> 
+  <Home /> 
   <HorizontalHeading />
     
     <div className="relative  mb-4 items-center flex w-full mt-5 ">

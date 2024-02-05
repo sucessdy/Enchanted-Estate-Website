@@ -12,7 +12,7 @@ const Links = [
   { name: "Testimonial", link: "./testimonial" },
 ]
 
-const Home = () => {
+const HomePage = () => {
   const [open, setOpen] = useState("");
   const [toggle, setToggle] = useState(false);
 
@@ -135,4 +135,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

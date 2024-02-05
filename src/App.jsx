@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-// import NewLetter from "./pages/NewLetter";
+
 import "./index.css";
 import Home from "./Home";
 import ItemCard from "./ItemCard";
@@ -12,15 +12,15 @@ import Email from "./pages/Email";
 import Footer from "./Footer";
 
 import Horizontal from "./Horizontal";
-
+import Header from "./Header";
 import DiscoverMore from "./components/DiscoverMore";
 import ProductPage from "./ProductPage";
-import Testimonial from "./pages/testimonial";
+import Testimonial from "./pages/Testimonial";
 function App() {
   return (
     <>
       <Routes>
-        
+      
         <Route path="/about-us" element={<All />} />
         <Route path="/contact" element={<Email />} />
 
@@ -35,7 +35,7 @@ function App() {
           element={
             <>
               <Home />
-
+<Header/>
               <Items />
               <ItemCard />
               <Work />

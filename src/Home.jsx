@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Header from "./Header";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaTimesCircle } from "react-icons/fa";
@@ -124,14 +123,14 @@ const Home = () => {
             <motion.button      initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: "tween", duration: 0.3 }}
-           className="flex justify-end items-end px-4 py-2 bg-black text-white hover:text-black rounded-md hover:bg-white max-md:invisible">
+           className="flex justify-end items-end px-4 py-2 bg-gray-600 text-white hover:text-black rounded-md hover:bg-white max-md:invisible">
               {" "}  
             Contact Us
             </motion.button>
           </a>
         </nav>
 
-        <Header />
+      
       </div>
     </div>
   );

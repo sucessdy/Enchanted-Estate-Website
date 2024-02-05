@@ -4,7 +4,7 @@ import sectionWrapper from "../hoc/sectionWrapper";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../style";
 import testimonials from "../data/testimonials";
-
+import Home from "../Home";
 
 const FeedbackCard = ({
   index,
@@ -43,7 +43,11 @@ const FeedbackCard = ({
 );
 
 const Testimonial = () => {
+
+
   return (
+    <> 
+    <Home /> 
     <div className="testimonial bg-black-100 rounded-[20px] mt-4">
       <div className="bg-tertiary rounded-2xl min-h-[300px] p-20">
         <motion.div variants={textVariant()}>
@@ -59,6 +63,7 @@ const Testimonial = () => {
 ))}
       </div>
     </div>
+    </>
   );
 };
 

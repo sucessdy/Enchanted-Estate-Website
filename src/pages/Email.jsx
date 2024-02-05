@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import emailjs from "@emailjs/browser";
 import ItemTitle from "../components/ItemTitle";
+import Home from "../Home";
+
 const Email = () => {
   const formRef = useRef();
 
@@ -55,6 +57,8 @@ const Email = () => {
   // service id
   // service_4yxhksi
   return (
+    <> 
+    <Home />
     <div
       id="contact"
       className=" xl:mt-12 xl:flex-row lg:flex-row md:flex-row flex-col-reverse flex overflow-hidden p-10"
@@ -154,7 +158,7 @@ const Email = () => {
         /> 
       </motion.div>
     </div>
-    // </div>
+    </>
   );
 };
 

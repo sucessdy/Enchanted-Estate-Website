@@ -9,6 +9,7 @@ import house from "../data/house";
 import ItemTitle from "../components/ItemTitle";
 
 import "react-vertical-timeline-component/style.min.css";
+import Home from "../Home";
 
 const variants = {
   initial: {
@@ -68,6 +69,9 @@ const DiscoverMoreCard = ({ house }) => (
 
 const DiscoverMore = () => {
   return (
+
+    <> 
+    <Home /> 
     <motion.div className="discover" variants={textVariant()}>
       <motion.div
         variants={variants}
@@ -92,6 +96,7 @@ const DiscoverMore = () => {
         </VerticalTimeline>
       </div>
     </motion.div>
+    </>
   );
 };
 
