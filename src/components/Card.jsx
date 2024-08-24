@@ -7,7 +7,7 @@ export default function Card({ name, description, icon }) {
       <motion.h1 id="text" className=" text-[1d1d1c] hover:text-gray-100 font-BodoniModa text-md  sm:text-[10px]  capitalize md:text-[13px] lg:text-[19px] space-x-2  space-y-4 ">
         {name}{" "}
       </motion.h1>{" "}
-      <p className="font-manrope text-[12px]  font-medium sm:-[6px] mr-4 mt-2 text-slate-600 hover:text-yellow-50 "> {description}</p>
+      <p className="para text-[12px]  font-medium sm:-[6px] mr-4 mt-2 text-slate-600 hover:text-yellow-50 "> {description}</p>
     </div>
   );
 }

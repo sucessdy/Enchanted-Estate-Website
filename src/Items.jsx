@@ -5,11 +5,6 @@ import ItemsInfo from "./components/ItemsInfo";
 import { motion } from "framer-motion";
 
 import { fadeIn, staggerContainer } from "./utils/motion";
-
-
-// import { Tilt } from "react-tilt";
-
-// import sectionWrapper from "./hoc/sectionWrapper";
 const variants = {
   initial: {
     opacity: 0,
@@ -27,6 +22,10 @@ const variants = {
       duration: 0.75,
     },
   },
+};
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 }, 
+  show: { opacity: 1, y: 0 }, 
 };
 
 
@@ -48,7 +47,7 @@ function Items({ index }) {
           >
             Service
           </h1>
-          <p className="text-gray-500 flex items-center text-sm sm:text-sm justify-center ">
+          <p className="text-gray-500 flex  justify-center items-center flex-1 text-sm sm:text-lg  para flex-wrap p-2">
             {" "}
             Embrace the Pinnacle of Luxury: Exquisite Services for Discerning
             Tastes
@@ -62,12 +61,12 @@ initial="hidden"
 whileInView="show"
 viewport={{ once: true, amount: 0.25 }} 
 
-            className=" mx-auto relative z-0  grid sm:grid-cols-2 md:grid-cols-3 gap-4  bottom-3  max-sm:justify-center sm:items-center sm:text-center md:flex-row md:flex sm:flex   md:justify-center space-x-4"
+            className=" mx-auto relative z-0  grid sm:grid-cols-2 md:grid-cols-3 gap-4  bottom-3  max-sm:justify-center sm:items-center sm:text-center md:flex-row md:flex sm:flex   md:justify-center space-x-4 font-manrope"
           >
             {contacts.map((contact, index) => (
             
-              
-                  <ItemsInfo
+            <motion.div key={index} variants={itemVariants}>
+                  <ItemsInfo 
                     key={index}
                     title={contact.title}
                     description={contact.description}
@@ -75,7 +74,7 @@ viewport={{ once: true, amount: 0.25 }}
                     className="w-[70%] h-[70%] shadow-xl rounded-md"
                   /> 
                
-             
+               </motion.div>
             ))}
           </motion.div>
         </div>
@@ -86,4 +85,4 @@ viewport={{ once: true, amount: 0.25 }}
 
 
 export default Items; 
-// export default sectionWrapper(Items, "items")
+

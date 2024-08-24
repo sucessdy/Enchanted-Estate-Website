@@ -4,10 +4,10 @@ import {
   AiFillTwitterCircle,
   AiFillGoogleCircle,
 } from "react-icons/ai";
-import { SiYourtraveldottv } from "react-icons/si";
+// import { SiYourtraveldottv } from "react-icons/si";
 export default function Footer() {
   return (
-    <div className=" w-full h-full  bg-[#1d1717;] py-6  cursor-pointer ">
+    <div className=" w-full h-full bg py-6  cursor-pointer ">
       <div className="mx-auto w-full max-w-screen-xl   pt-20  ">
         <div className="grid grid-cols-1  sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-4  gap-4  px-4  py-6  lg:py-8   ">
           <div className=" my-2 items-center  ">
@@ -20,7 +20,7 @@ export default function Footer() {
               <AiFillInstagram />
               <AiFillTwitterCircle />
               <AiFillGoogleCircle />
-              <SiYourtraveldottv />
+              {/* <SiYourtraveldottv /> */}
             </div>
           </div>
 
@@ -73,11 +73,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h2 className="font-Raleway text-white mb-4 flex justify-around items-center sm:justify-start font-bold uppercase  ">
+            <h2 className="font-Raleway text-gray-50 mb-4 flex justify-around items-center sm:justify-start uppercase  ">
               {" "}
            Legal
             </h2>
-            <ul className="text-gray-400 text-sm ">
+            <ul className="text-gray-400 text-sm para">
               <li className="mb-1 flex justify-around items-center sm:justify-start  ">
                 <a href="#" className="hover:text-white " > Privacy Policy</a>
               </li>
@@ -97,20 +97,20 @@ export default function Footer() {
           {/* txt 3
            */}
         </div>
-        <div className="py-5  bg-[#1d1717;] my-5 text-center rounded-t-lg  ">
+        <div className="py-5  bg my-5 text-center rounded-t-lg para ">
           <a
             className="px-2  block text-xl md:text-2xl font-Raleway text-white hover:text-gray-500"
-            href="#Home"
+            href="#"
           >
             "We're the key to your Home"
           </a>
           <a
-            className="text-xl md:text-2xl font-Raleway text-gray-200 hover:text-gray-400"
+            className="text-xl md:text-2xl para text-gray-200 hover:text-gray-400"
             href=""
           >
             {" "}
           </a>
-          <p className="text-neutral-400  pt-2 ">
+          <p className="text-neutral-400  pt-2 para">
             Copyright © 2023 Enchanted.in Exclusive Pvt Ltd {" "}
             {new Date().getFullYear()} | All rights reserved
           </p>

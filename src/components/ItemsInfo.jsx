@@ -14,7 +14,7 @@ export default function ItemsInfo({ title, description, image }) {
       </h1>
       <p
         id="text"
-        className="text-sm flex text-left text-gray-600 first-letter:capitalize "
+        className="text-sm flex text-left text-gray-600 first-letter:capitalize para "
       >
         {description}
       </p>

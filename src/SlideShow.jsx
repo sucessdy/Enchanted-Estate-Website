@@ -81,14 +81,16 @@ function SlideShow() {
         </svg>
       </div>
 
-      <div className="flex justify-center top-4 w-full h-full items-center   transtion-500 ">
+      <div className="flex justify-center top-4 w-full h-full items-center   transtion-500   ">
         {slides.map((slide, SlideIndex) => (
+
           <div
+         
             onClick={() => goToSlide(SlideIndex)}
-            className="text-2xl cursor-pointer "
+            className="text-2xl cursor-pointer"
           > 
           
-          <div className="">  
+          <div>  
 
           <RxDot />
           </div>
@@ -96,8 +98,9 @@ function SlideShow() {
           </div>
         ))}
       </div>
+     
+
     </div>
   );
 }
-
 export default SlideShow;

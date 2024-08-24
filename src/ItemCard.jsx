@@ -32,7 +32,7 @@ export default function ItemCard() {
           Your Dream Home Awaits{" "}
         </h1>
 
-        <p className=" text-sm font-manrope  my-3 py-1 text-[#5a5a58] text-center font-medium">
+        <p className=" text-sm para  my-3 py-1 text-[#5a5a58] text-center font-medium">
           {" "}
           Welcome to our exclusive real estate platform, where we connect you to
           the finest houses in [Caratland].
@@ -45,10 +45,12 @@ export default function ItemCard() {
           
 
          {card.map((cards, index) => ( 
-             <Tilt options={{max: 45, scale: 1, speed: 450}}> 
-          <Card key={index} name={cards.name}
-          description={cards.description}
-          icon={cards.icon}
+             <Tilt options={{ max: 65, scale: 1.1, speed: 550 }} key={cards.hash || index}>
+             <Card
+               key={cards.hash || index} 
+               name={cards.name}
+               description={cards.description}
+               icon={cards.icon}
           className="perspective-1000 transform-style-preserve-3d group hover:rotate-x-10 hover:rotate-y-10"
           ></Card>
           </Tilt>

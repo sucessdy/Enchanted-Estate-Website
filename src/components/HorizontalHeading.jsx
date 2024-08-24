@@ -11,7 +11,7 @@ function HorizontalHeading() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}> Cozy HOMe & Living
             </motion.h1>  
-            <p className=" text-stone-400 dark:text-stone-200 text-sm sm:text-sm md:text-[12px] lg:text-[14px]  text-center "> Just Take a Look at our modern and cozy House List...</p>
+            <p className=" text-stone-400 dark:text-stone-200 text-sm sm:text-sm md:text-[12px] lg:text-[14px]  text-center para "> Just Take a Look at our modern and cozy House List...</p>
 
     </div>
   )

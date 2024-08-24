@@ -13,12 +13,12 @@ export default function WorkHouse({ title,
   amount,}) {
     return (
 
-    <div className="bg-white shadow  w-full rounded-lg  ">
-      <img src={img} alt="image" className="w-full h-23 md:h-35 object-contain rounded-lg " />
+    <div className="bg-slate-200 shadow  w-full  pb-1 ">
+      <img src={img} alt="image" className="w-full h-23 md:h-35 object-contain " />
       
       <div className="flex items-center w-full py-3 gap-4 ">
-        <div className="flex items-center justify-between p-2 m-1 ">{icons}</div>
-        <h2 className="sm:text-[14px]  md:text-[17px] lg:text-[20x] font-fredoka text-black">
+        <div className="flex items-center justify-between px-1">{icons}</div>
+        <h2 className="sm:text-[1rem]  md:text-[17px] lg:text-[1.1rem] -m-2   -tracking-tighter  para text-black text-left ">
           {title}
         </h2>
       </div>
@@ -32,7 +32,7 @@ export default function WorkHouse({ title,
             {" "}
             {icon1}
           </div>
-          <p className="mr-2   font-manrope text-sm text-[#1d1d1c] ">
+          <p className="mr-2   para text-sm text-[#1d1d1c] ">
             {" "}
             { name1 }
           </p>
@@ -56,7 +56,7 @@ export default function WorkHouse({ title,
       {/* button amount */}
 
       <div className="flex justify-between items-center my-5  ">
-        <a href="tel:+91-7982516281">
+        <a href="/contact">
         <button className="mx-2  items-center  text-center text-white md:text-md  sm:text-sm text-sm  md:text-[12px] lg:text-[14x]   border bg-[#1d1d1c] hover:bg-[#8d8c85]  py-1 px-4  h-8 sm-h-10 w-3/3 uppercase">
           {}Book Now
         </button>

@@ -21,7 +21,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="home" id={`home`}>
+    <div className="home" >
       <div className=" relative items-center w-full h-full bg-transparent text-white  ">
         <nav className="flex justify-between items-center py-2 mx-4 ">
           <motion.div

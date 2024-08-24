@@ -1,16 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaTimesCircle } from "react-icons/fa";
-import {HiOutlineMenuAlt4 } from "react-icons/hi";
+import { RxCross1 } from "react-icons/rx";
+import { TbMenu } from "react-icons/tb";
+import Button from "./components/ui/Button";
 const Links = [
-  { name: "Home", link: "/" },
+  { name: "Home", link: "./home" },
   { name: "About Us", link: "./about-us" },
 
-
-  { name: "Service", link: "./style" },
+  { name: "Service", link: "./service" },
   { name: "Testimonial", link: "./testimonial" },
-]
+];
 
 const Home = () => {
   const [open, setOpen] = useState("");
@@ -22,22 +22,25 @@ const Home = () => {
 
   return (
     <div className="home" id={`home`}>
-      <div className=" relative items-center w-full h-full bg-transparent text-white  ">
-        <nav className="flex justify-between items-center py-2 mx-4 ">
+      <div className=" relative items-center w-full h-full bg-transparent text-white  mt-5  mb-5">
+        <nav className="flex justify-between items-center py-2 mx-4  ">
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
             {" "}
-            <motion.h2   initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}  className="flex justify-start items-center gap-4 p-3 font-Outfit font-semibold ">
+            <motion.h1
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="flex justify-start items-center gap-4 p-3  font-medium  font-manrope"
+            >
               {" "}
               Enchanted
-            </motion.h2>
+            </motion.h1>
           </motion.div>
 
-          <div className="md:block hidden md:items-center list-none overflow-hidden z-40  gap-3">
+          <div className="md:block hidden md:items-centerlist-none overflow-hidden z-40  gap-3">
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -48,7 +51,7 @@ const Home = () => {
                 damping: 9,
                 duration: 0.3,
               }}
-              className="ml-10 flex items-center space-x-4 "
+              className="ml-10 flex items-center space-x-4 font-manrope "
             >
               {Links.map((link, index) => (
                 <Link
@@ -60,40 +63,40 @@ const Home = () => {
                     window.scrollTo(0, 0);
                   }}
                   className={`${
-                    open === link.name ? "text-gray-100 " : "hover:text-stone-400"
-                  } text-[16px] cursor-pointer font-Raleway text-sm space-x-3 font-medium  `}
-                  
+                    open === link.name
+                      ? "text-gray-300 "
+                      : "hover:text-white"
+                  } text-[16px] cursor-pointer  text-sm space-x-3 font-medium  `}
                 >
                   {" "}
                   {link.name}
                 </Link>
               ))}
-              
             </motion.div>
           </div>
 
           {/* mobile  */}
           <div
-            className="sm:hidden flex flex-1 justify-end items-center pl-12
+            className="sm:hidden flex flex-1 justify-end items-center pl-12 text-xl
           "
           >
             <motion.button
               type="button"
               // id="menu-btn"
               onClick={handleToggle}
-              className=" h-7 cursor-pointer "  
+              className="  cursor-pointer h-6 "
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ type: "tween", duration: 0.3 }}
             >
-              {toggle ? <FaTimesCircle /> : <HiOutlineMenuAlt4 />}
+              {toggle ? <RxCross1 className="font-[4rem]"  /> : <TbMenu  />}
             </motion.button>
             <div
               className={`${
                 !toggle ? "hidden" : ""
-              } p-6 bg-gradient-to-l from-stone-800 to-stone-400 opacity-80 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl  `}
+              } p-6 bg-gradient-to-l from-stone-800 to-stone-400 bg-opacity-30 backdrop-blur-lg border border-gray-300 border-opacity-30 shadow-lg absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl  `}
             >
-              <ul className="list-none flex justify-end items-start flex-col gap-12">
+              <ul className="list-none flex justify-end items-start flex-col gap-8">
                 {Links.map((link) => (
                   <li
                     key={link.link}
@@ -108,9 +111,9 @@ const Home = () => {
                       }}
                       className={`${
                         open === link.name
-                          ? "text-white"
+                          ? "text-gray-500"
                           : "hover:text-slate-200"
-                      } text-[16px] cursor-pointer font-manrope `}
+                      } text-[1rem] cursor-pointer para `}
                     >
                       {link.name}
                     </Link>
@@ -119,18 +122,15 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <a href="./contact">
-            <motion.button      initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ type: "tween", duration: 0.3 }}
-           className="flex justify-end items-end px-4 py-2 bg-gray-600 text-white hover:text-black rounded-md hover:bg-white max-md:invisible">
-              {" "}  
-            Contact Us
-            </motion.button>
-          </a>
-        </nav>
+          
 
+          <a href="./contact"  className="hidden lg:inline-block">
+         <Button> Contact Us{" "} </Button>
+            
       
+        </a>
+
+        </nav>
       </div>
     </div>
   );

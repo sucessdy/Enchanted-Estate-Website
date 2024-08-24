@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import sectionWrapper from "./hoc/sectionWrapper";
-import Footer from "./Footer";
-import Home from "./Home";
+
 
 const imgUrl = {
   modern:
@@ -21,14 +20,15 @@ function ProductPage() {
 
   return (
     <> 
-    <Home /> 
+   
+  
     <main
-      id="style"
-      className="style w-[100%] h-[100%] flex flex-col lg:flex-row bg-white p-2z  "
+      id="service"
+      className="style w-[100%] h-[100%] flex flex-col lg:flex-row bg-gray-50 p-2 items-center   "
     >
       <div
-        id="style"
-        className="relative lg:w-1/2 w-full h-[99%]  sm:items-center sm:flex sm:justify-start justify-center drop-shadow-sm "
+        id="service"
+        className="relative lg:w-1/2 w-full h-[99%]  sm:items-center sm:flex sm:justify-start justify-center drop-shadow-sm  m-4"
       >
         <img
           src={imgUrl[selectedType]}
@@ -44,7 +44,7 @@ function ProductPage() {
           Exclusive Modern House{" "}
         </h2>
 
-        <p className=" text-[#1d1d1c] text-[1.3rem] font-bold  p-2 first-letter:left-0 flex  sm:items-start  border-purple-50  justify-start    ">
+        <p className=" text-[#1d1d1c] text-[1.3rem] font-bold  p-2 first-letter:left-0 flex  sm:items-start  border-purple-50  justify-start  para  ">
           {" "}
           $400,900 USD{" "}
         </p>
@@ -60,7 +60,7 @@ function ProductPage() {
             {typeVariants.map((house, index) => (
               <button
                 key={index}
-                className={`bg-gray-50 px-4 py-1   rounded-full border-2 mb-4 m-0 ${
+                className={`bg-white px-4 py-1   rounded-full border-2 mb-4 m-0 ${
                   selectedType === house
                     ? "border-[#1d1d1c]"
                     : "border-stone-100 "
@@ -74,13 +74,13 @@ function ProductPage() {
         </section>
 
         <a href="./contact" className=" mt-3">
-          <button className=" text-sm  text-[#ffffff]  py-3 border border-gray-200  bg-[#1d1d1c] rounded-full  my-4  font-manrope  text-center sm:text-sm  hover:bg-white hover:text-[#1d1d1c]  px-8 shadow-lg   transition-400 scroll-smooth  font-bold whitespace-nowrap  leading-6 tracking-wider  m-0   ">
+          <button className=" text-sm  text-[#ffffff]  py-3 border border-gray-200  bg-[#1d1d1c] rounded-full  my-4    text-center sm:text-sm  hover:bg-white hover:text-[#1d1d1c]  px-8 shadow-lg   transition-400 scroll-smooth  font-bold whitespace-nowrap  leading-6 tracking-wider  m-0  para ">
             Contact Now
           </button>
         </a>
       </div>
     </main>
-<Footer/>
+
     </>
   );
 }

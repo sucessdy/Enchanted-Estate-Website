@@ -75,14 +75,14 @@ export const textVariant = (delay) => {
     };
   };
   
-  export const staggerContainer = (staggerChildren, delayChildren) => {
+  export const staggerContainer = () => {
     return {
-      hidden: {},
-      show: {
-        transition: {
-          staggerChildren: staggerChildren,
-          delayChildren: delayChildren || 0,
-        },
-      },
+      hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2, // Adjust this value to control the delay between animations
+    },
+  },
     };
   };

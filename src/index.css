@@ -10,11 +10,20 @@
   box-sizing: border-box;
 }
 
-body {
-  background: linear-gradient(to right, #191416, #1d1d1c);
+.para{
+  @apply font-manrope; 
+}
 
+.bg{
+  background: linear-gradient(to right, #141112, #1d1d1c);
+}
+
+body {
+  background: linear-gradient(to right, #141112, #1d1d1c);
+ 
  
 }
+
 
 .Service {
   min-height: 150px;

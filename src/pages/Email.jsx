@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import emailjs from "@emailjs/browser";
 import ItemTitle from "../components/ItemTitle";
-import Home from "../Home";
+
 
 const Email = () => {
   const formRef = useRef();
@@ -49,32 +49,22 @@ const Email = () => {
         }
       );
   };
-
-  // API key bleTstMfJYecB3mVG
-
-  // template id  template_xs9r38j
-
-  // service id
-  // service_4yxhksi
   return (
     <> 
-    <Home />
+   
     <div
       id="contact"
       className=" xl:mt-12 xl:flex-row lg:flex-row md:flex-row flex-col-reverse flex overflow-hidden p-10"
     >
-      {/* <div className="bg-white dark:bg-[#1d1d1c] rounded-2xl min-h-[300px] p-20"> */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className=" flex-1 bg-white dark:bg-[#1d1d1c]  p-8  rounded-lg  relative lg:w-1/2  md:w-1/2 w-full"
       >
-        <p className="text-[#1d1d1c] font-Raleway -tracking-wider text-[18px]  dark:text-white ">
+        <p className="text-[#1d1d1c] para -tracking-wider text-[18px]  dark:text-white ">
           {" "}
           Get in Touch with us
         </p>
-        {/* <h3 className="text-[28px] capitalize font-bold sm:text-[48px] mt-1 text-[#1d1d1c] dark:text-gray-200 font-manrope leading-13  ">Contact
-            {" "}
-          </h3> */}
+        
         <ItemTitle> Contact</ItemTitle>
 
         <form

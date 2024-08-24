@@ -3,15 +3,26 @@ import ItemTitle from "../components/ItemTitle";
 import works from "../data/works";
 import WorkHouse from "../components/WorkHouse"
 import sectionWrapper from "../hoc/sectionWrapper";
-
+import {motion }  from "framer-motion"
+import { staggerContainer } from "../utils/motion";
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 }, 
+  show: { opacity: 1, y: 0 }, 
+};
  function Product() {
   return (
-    <div id='product' className=" product w-full  ">
+    <motion.div 
+
+    variants={staggerContainer()}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.25 }} id='product' className=" product w-full  ">
       <ItemTitle className="text-white "> Go Big and Go home </ItemTitle>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  p-5 ">
         
        {works.map((work, index) =>  (
+         <motion.div key={index} variants={itemVariants}> 
           <WorkHouse
             key={index}
             img={work.img}
@@ -28,10 +39,11 @@ import sectionWrapper from "../hoc/sectionWrapper";
             amount={work.amount}
           >
             {" "}
-          </WorkHouse>
+          </WorkHouse> 
+        </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
