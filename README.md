@@ -4,7 +4,7 @@
 
 **Welcome to the Real Estate Wonderland! 🌟 Dive into a world of stunning properties and seamless browsing.**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Explore%20Now-green?style=for-the-badge&logo=github)]([https://sucessdy.github.io/Real_Estate_Web](https://enchanted-estate-website.netlify.app/))
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Explore%20Now-green?style=for-the-badge&logo=github)](https://mukta-s-portfolio.vercel.app/)
 
 ## 🚀 Features
 
